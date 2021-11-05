@@ -9,7 +9,7 @@ It has the ability to recursively count files in each directory, as well as diff
 | ----- | ----------- | -------- |
 | -b | Yes | Takes a path to a base directory, otherwise uses parent directory |
 | -r | No | Enables recursion, turned off by default |
-| -i | No | Includes hidden files and directoryes, turned off by default |
+| -i | No | Includes hidden files and directories, turned off by default |
 | -m | Yes | Max depth of subdirectories, set to 1000 by default |
 | -s | Yes | Sorting algorithm for displaying list of directories, "ascending", "descending", "alphabetical" and "reverse-alphabetical" available, with "ascending" set as default |
 | -l | Yes | Limit the number of directories printed if displaying directories is enabled, default set to 1000 |
