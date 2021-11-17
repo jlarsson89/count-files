@@ -165,7 +165,7 @@ fn scan_dir(depth: i64, max_depth: i64, base: String, hidden: bool, recursion: b
                             dir.push('/');
                             let d: Dirs = Dirs{depth: depth, parent: base.to_string(), path: dir.clone(), name: file_name.to_string(), hidden: false};
                             DIRS.lock().unwrap().push(d);
-                            if !is_folder_empty(&base).unwrap() {
+                            if !is_folder_empty(&dir).unwrap() {
                                 scan_dir(depth+1, max_depth, dir, false, true);
                             }
                         }
